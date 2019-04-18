@@ -1,13 +1,13 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: development
+  database: development-ts
   pool: 2
 
 test:
   adapter: postgresql
   encoding: unicode
-  database: test
+  database: test-ts
   pool: 2
 
 production:
