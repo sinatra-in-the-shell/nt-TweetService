@@ -1,6 +1,7 @@
 .bundle/
 log/
 .env
+.gitignore
 
 # Elastic Beanstalk Files
 .elasticbeanstalk/*

@@ -23,6 +23,7 @@ require 'securerandom'
 Dir["./models/*.rb"].each {|file| require file }
 
 set :server, "thin"
+set :port, 9494
 
 enable :sessions
 
