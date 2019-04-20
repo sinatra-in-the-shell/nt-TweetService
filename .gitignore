@@ -1,9 +1,0 @@
-.bundle/
-log/
-.env
-.gitignore
-
-# Elastic Beanstalk Files
-.elasticbeanstalk/*
-!.elasticbeanstalk/*.cfg.yml
-!.elasticbeanstalk/*.global.yml

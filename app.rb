@@ -19,6 +19,7 @@ require 'sidekiq'
 require 'securerandom'
 require 'dotenv/load'
 require 'securerandom'
+require 'bunny'
 
 Dir["./models/*.rb"].each {|file| require file }
 
@@ -41,3 +42,14 @@ $timeline_redis.clear
 
 # Apis
 Dir["./apis/*.rb"].each {|file| require file }
+
+before do
+  #TODO authenticate the caller
+end
+
+begin
+  tweet_server
+rescue Interrupt => _
+  tweet_server.stop
+  pp "** tweet server interupted **"
+end
