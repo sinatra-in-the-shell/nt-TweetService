@@ -29,20 +29,10 @@ class RabbitServer
   def subscribe_to_queue
     queue.subscribe do |delivery_info, properties, payload|
       req = JSON.parse payload
-
-      pp '** PAYLOAD and REQ **:'
-      pp payload
-      pp req
-
-      pp '** DELIVERY IFO, PROPERTIIES ** :'
-      pp delivery_info
-      pp properties
-
-
       result = helper.process req
       pp '** RESULT ** :'
-      pp req
-      
+      pp result
+
       exchange.publish(
         result,
         routing_key: properties.reply_to,

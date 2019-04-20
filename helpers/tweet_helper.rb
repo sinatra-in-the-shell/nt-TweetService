@@ -22,6 +22,7 @@ class TweetHelper
     pp '** INSIDE NEW TWEET ** '
     params = req
     pp params
+    'sample result'
   end
 
 
