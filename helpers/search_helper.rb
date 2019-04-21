@@ -44,9 +44,9 @@ module SearchHelper
     json_array_response users
   end
 
-  def self.get_tweet_from_redis(keyword, max_results, redis_client)
+  def self.get_tweet_from_redis(keyword, max_results)
     puts "[REDIS HIT] searched #{keyword}"
-    tweets = redis_client.get_json_list(keyword, 0, max_results - 1)
+    tweets = $search_redis.get_json_list(keyword, 0, max_results - 1)
     json_response 200, tweets
   rescue StandardError => e
     json_response 400, e.message
