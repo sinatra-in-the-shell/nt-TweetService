@@ -36,9 +36,11 @@ end
 # $followers_redis = RedisClient.new(ENV['FOLLOWERS_REDIS'])
 # $leaders_redis = RedisClient.new(ENV['LEADERS_REDIS'])
 # $timeline_redis = RedisClient.new(ENV['TIMELINE_REDIS'])
+# $search_redis = RedisClient.new(ENV['SEARCH_REDIS_URL'])
 # $followers_redis.clear
 # $leaders_redis.clear
 # $timeline_redis.clear
+# $search_redis.clear
 
 # Apis
 Dir["./apis/*.rb"].each {|file| require file }
