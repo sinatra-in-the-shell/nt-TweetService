@@ -47,6 +47,7 @@ class RabitClient
       response_id = properties[:correlation_id]
       calls[response_id] = payload
     end
+    
   end
 
   def generate_uuid
