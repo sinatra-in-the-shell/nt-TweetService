@@ -2,7 +2,7 @@ class RabbitServer
 
   def initialize(rabbit_url=nil)
     if rabbit_url
-      @connection = Bunny.new(url: rabbit_url)
+      @connection = Bunny.new rabbit_url 
     else
       @connection = Bunny.new
     end
