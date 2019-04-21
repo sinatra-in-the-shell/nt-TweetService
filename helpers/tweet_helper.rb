@@ -22,6 +22,12 @@ class TweetHelper
     pp '** INSIDE NEW TWEET ** '
     params = req
     pp params
-    'sample result'
+    params.delete 'method'
+    @tweet = Tweet.new params
+    if @tweet.save
+      @tweet.to_json
+    else 
+      @tweet.errors.full_messages
+    end
   end
 end
