@@ -24,6 +24,4 @@ class TweetHelper
     pp params
     'sample result'
   end
-
-
 end
