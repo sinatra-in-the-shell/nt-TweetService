@@ -33,12 +33,12 @@ helpers do
 end
 
 # init redis client, maybe put into another file for cleaness
-$followers_redis = RedisClient.new(ENV['FOLLOWERS_REDIS'])
-$leaders_redis = RedisClient.new(ENV['LEADERS_REDIS'])
-$timeline_redis = RedisClient.new(ENV['TIMELINE_REDIS'])
-$followers_redis.clear
-$leaders_redis.clear
-$timeline_redis.clear
+# $followers_redis = RedisClient.new(ENV['FOLLOWERS_REDIS'])
+# $leaders_redis = RedisClient.new(ENV['LEADERS_REDIS'])
+# $timeline_redis = RedisClient.new(ENV['TIMELINE_REDIS'])
+# $followers_redis.clear
+# $leaders_redis.clear
+# $timeline_redis.clear
 
 # Apis
 Dir["./apis/*.rb"].each {|file| require file }
