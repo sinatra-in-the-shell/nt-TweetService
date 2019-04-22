@@ -327,3 +327,12 @@
 [2019-04-21 21:00:42 -0400 LAPTOP-7LQO33RH (4944)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
 [2019-04-21 21:00:42 -0400 LAPTOP-7LQO33RH (4944)] ERROR : NewRelic::Agent::UnrecoverableServerException: 400: Bad Request
 [2019-04-21 21:00:42 -0400 LAPTOP-7LQO33RH (4944)] INFO : Will re-attempt in 60 seconds
+[2019-04-21 21:01:44 -0400 LAPTOP-7LQO33RH (4944)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2019-04-21 21:01:44 -0400 LAPTOP-7LQO33RH (4944)] ERROR : NewRelic::Agent::UnrecoverableServerException: 400: Bad Request
+[2019-04-21 21:01:44 -0400 LAPTOP-7LQO33RH (4944)] INFO : Will re-attempt in 120 seconds
+[2019-04-21 21:03:47 -0400 LAPTOP-7LQO33RH (4944)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2019-04-21 21:03:47 -0400 LAPTOP-7LQO33RH (4944)] ERROR : NewRelic::Agent::UnrecoverableServerException: 400: Bad Request
+[2019-04-21 21:03:47 -0400 LAPTOP-7LQO33RH (4944)] INFO : Will re-attempt in 300 seconds
+[2019-04-21 21:08:49 -0400 LAPTOP-7LQO33RH (4944)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2019-04-21 21:08:49 -0400 LAPTOP-7LQO33RH (4944)] ERROR : NewRelic::Agent::UnrecoverableServerException: 400: Bad Request
+[2019-04-21 21:08:49 -0400 LAPTOP-7LQO33RH (4944)] INFO : Will re-attempt in 300 seconds

@@ -10,7 +10,10 @@ def search_tag_from_database(params)
                   .with_skip(skip)
                   .with_max(max_results)
   puts "[REDIS MISS] searched tags by #{keyword}"
-  $search_redis.push_results(keyword + '_tags', tags) if tags
+  if tags
+    $search_redis.push_results(keyword + '_tags', tags)
+    $search_redis.expire(keyword + '_tags', 10)
+  end
   json_array_response tags
 end
 
@@ -26,7 +29,10 @@ def search_tweet_from_database(params)
                 .with_skip(skip)
                 .with_max(max_results)
   puts "[REDIS MISS] searched tweets by #{keyword}"
-  $search_redis.push_results(keyword + '_tweets', tweets) if tweets
+  if tweets
+    $search_redis.push_results(keyword + '_tweets', tweets)
+    $search_redis.expire(keyword + '_tweets', 10)
+  end
   json_array_response tweets
 end
 
@@ -38,7 +44,10 @@ def search_user_from_database(params)
               .with_skip(skip)
               .with_max(max_results)
   puts "[REDIS MISS] searched users by #{keyword}"
-  $search_redis.push_results(keyword + '_users', users) if users
+  if users
+    $search_redis.push_results(keyword + '_users', users)
+    $search_redis.expire(keyword + '_users', 10)
+  end
   json_array_response users
 end
 

@@ -38,6 +38,10 @@ class RedisClient
     @redis_client.rpop(key)
   end
 
+  def expire(key, time=15)
+    @redis_client.expire(key, time)
+  end
+  
   def del(key)
     @redis_client.del(key)
   end
@@ -45,4 +49,5 @@ class RedisClient
   def clear
     @redis_client.flushall
   end
+
 end
