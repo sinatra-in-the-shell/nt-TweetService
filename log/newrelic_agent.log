@@ -1,0 +1,329 @@
+# Logfile created on 2019-04-21 20:24:29 -0400 by logger.rb/66358
+[2019-04-21 20:24:29 -0400 LAPTOP-7LQO33RH (3526)] INFO : Starting the New Relic agent version 6.2.0.354 in "development" environment.
+[2019-04-21 20:24:29 -0400 LAPTOP-7LQO33RH (3526)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2019-04-21 20:24:29 -0400 LAPTOP-7LQO33RH (3526)] INFO : Reading configuration from config/newrelic.yml (/mnt/d/workplace/nt-TweetService)
+[2019-04-21 20:24:29 -0400 LAPTOP-7LQO33RH (3526)] INFO : Environment: development
+[2019-04-21 20:24:29 -0400 LAPTOP-7LQO33RH (3526)] INFO : No known dispatcher detected.
+[2019-04-21 20:24:29 -0400 LAPTOP-7LQO33RH (3526)] INFO : Application: My Application (Development)
+[2019-04-21 20:24:29 -0400 LAPTOP-7LQO33RH (3526)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2019-04-21 20:24:29 -0400 LAPTOP-7LQO33RH (3526)] INFO : Installing ActiveRecord 5 instrumentation
+[2019-04-21 20:24:29 -0400 LAPTOP-7LQO33RH (3526)] INFO : Installing Net instrumentation
+[2019-04-21 20:24:29 -0400 LAPTOP-7LQO33RH (3526)] INFO : Installing Sinatra instrumentation
+[2019-04-21 20:24:29 -0400 LAPTOP-7LQO33RH (3526)] INFO : Installing deferred Rack::Builder instrumentation
+[2019-04-21 20:24:29 -0400 LAPTOP-7LQO33RH (3526)] INFO : Installing Rack::Builder middleware instrumentation
+[2019-04-21 20:24:29 -0400 LAPTOP-7LQO33RH (3526)] INFO : Finished instrumentation
+[2019-04-21 20:27:45 -0400 LAPTOP-7LQO33RH (3549)] INFO : Starting the New Relic agent version 6.2.0.354 in "development" environment.
+[2019-04-21 20:27:45 -0400 LAPTOP-7LQO33RH (3549)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2019-04-21 20:27:45 -0400 LAPTOP-7LQO33RH (3549)] INFO : Reading configuration from config/newrelic.yml (/mnt/d/workplace/nt-TweetService)
+[2019-04-21 20:27:45 -0400 LAPTOP-7LQO33RH (3549)] INFO : Environment: development
+[2019-04-21 20:27:45 -0400 LAPTOP-7LQO33RH (3549)] INFO : No known dispatcher detected.
+[2019-04-21 20:27:45 -0400 LAPTOP-7LQO33RH (3549)] INFO : Application: My Application (Development)
+[2019-04-21 20:27:45 -0400 LAPTOP-7LQO33RH (3549)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2019-04-21 20:27:45 -0400 LAPTOP-7LQO33RH (3549)] INFO : Installing ActiveRecord 5 instrumentation
+[2019-04-21 20:27:45 -0400 LAPTOP-7LQO33RH (3549)] INFO : Installing Net instrumentation
+[2019-04-21 20:27:45 -0400 LAPTOP-7LQO33RH (3549)] INFO : Installing Sinatra instrumentation
+[2019-04-21 20:27:45 -0400 LAPTOP-7LQO33RH (3549)] INFO : Installing deferred Rack::Builder instrumentation
+[2019-04-21 20:27:45 -0400 LAPTOP-7LQO33RH (3549)] INFO : Installing Rack::Builder middleware instrumentation
+[2019-04-21 20:27:45 -0400 LAPTOP-7LQO33RH (3549)] INFO : Finished instrumentation
+[2019-04-21 20:28:49 -0400 LAPTOP-7LQO33RH (3620)] INFO : Starting the New Relic agent version 6.2.0.354 in "development" environment.
+[2019-04-21 20:28:49 -0400 LAPTOP-7LQO33RH (3620)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2019-04-21 20:28:49 -0400 LAPTOP-7LQO33RH (3620)] INFO : Reading configuration from config/newrelic.yml (/mnt/d/workplace/nt-TweetService)
+[2019-04-21 20:28:49 -0400 LAPTOP-7LQO33RH (3620)] INFO : Environment: development
+[2019-04-21 20:28:49 -0400 LAPTOP-7LQO33RH (3620)] INFO : No known dispatcher detected.
+[2019-04-21 20:28:49 -0400 LAPTOP-7LQO33RH (3620)] INFO : Application: My Application (Development)
+[2019-04-21 20:28:49 -0400 LAPTOP-7LQO33RH (3620)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2019-04-21 20:28:50 -0400 LAPTOP-7LQO33RH (3620)] INFO : Installing ActiveRecord 5 instrumentation
+[2019-04-21 20:28:50 -0400 LAPTOP-7LQO33RH (3620)] INFO : Installing Net instrumentation
+[2019-04-21 20:28:50 -0400 LAPTOP-7LQO33RH (3620)] INFO : Installing Sinatra instrumentation
+[2019-04-21 20:28:50 -0400 LAPTOP-7LQO33RH (3620)] INFO : Installing deferred Rack::Builder instrumentation
+[2019-04-21 20:28:50 -0400 LAPTOP-7LQO33RH (3620)] INFO : Installing Rack::Builder middleware instrumentation
+[2019-04-21 20:28:50 -0400 LAPTOP-7LQO33RH (3620)] INFO : Finished instrumentation
+[2019-04-21 20:29:07 -0400 LAPTOP-7LQO33RH (3651)] INFO : Starting the New Relic agent version 6.2.0.354 in "development" environment.
+[2019-04-21 20:29:07 -0400 LAPTOP-7LQO33RH (3651)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2019-04-21 20:29:07 -0400 LAPTOP-7LQO33RH (3651)] INFO : Reading configuration from config/newrelic.yml (/mnt/d/workplace/nt-TweetService)
+[2019-04-21 20:29:07 -0400 LAPTOP-7LQO33RH (3651)] INFO : Environment: development
+[2019-04-21 20:29:07 -0400 LAPTOP-7LQO33RH (3651)] INFO : No known dispatcher detected.
+[2019-04-21 20:29:07 -0400 LAPTOP-7LQO33RH (3651)] INFO : Application: My Application (Development)
+[2019-04-21 20:29:07 -0400 LAPTOP-7LQO33RH (3651)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2019-04-21 20:29:07 -0400 LAPTOP-7LQO33RH (3651)] INFO : Installing ActiveRecord 5 instrumentation
+[2019-04-21 20:29:07 -0400 LAPTOP-7LQO33RH (3651)] INFO : Installing Net instrumentation
+[2019-04-21 20:29:07 -0400 LAPTOP-7LQO33RH (3651)] INFO : Installing Sinatra instrumentation
+[2019-04-21 20:29:07 -0400 LAPTOP-7LQO33RH (3651)] INFO : Installing deferred Rack::Builder instrumentation
+[2019-04-21 20:29:07 -0400 LAPTOP-7LQO33RH (3651)] INFO : Installing Rack::Builder middleware instrumentation
+[2019-04-21 20:29:07 -0400 LAPTOP-7LQO33RH (3651)] INFO : Finished instrumentation
+[2019-04-21 20:29:40 -0400 LAPTOP-7LQO33RH (3666)] INFO : Starting the New Relic agent version 6.2.0.354 in "development" environment.
+[2019-04-21 20:29:40 -0400 LAPTOP-7LQO33RH (3666)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2019-04-21 20:29:40 -0400 LAPTOP-7LQO33RH (3666)] INFO : Reading configuration from config/newrelic.yml (/mnt/d/workplace/nt-TweetService)
+[2019-04-21 20:29:40 -0400 LAPTOP-7LQO33RH (3666)] INFO : Environment: development
+[2019-04-21 20:29:40 -0400 LAPTOP-7LQO33RH (3666)] INFO : No known dispatcher detected.
+[2019-04-21 20:29:40 -0400 LAPTOP-7LQO33RH (3666)] INFO : Application: My Application (Development)
+[2019-04-21 20:29:40 -0400 LAPTOP-7LQO33RH (3666)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2019-04-21 20:29:40 -0400 LAPTOP-7LQO33RH (3666)] INFO : Installing ActiveRecord 5 instrumentation
+[2019-04-21 20:29:40 -0400 LAPTOP-7LQO33RH (3666)] INFO : Installing Net instrumentation
+[2019-04-21 20:29:40 -0400 LAPTOP-7LQO33RH (3666)] INFO : Installing Sinatra instrumentation
+[2019-04-21 20:29:40 -0400 LAPTOP-7LQO33RH (3666)] INFO : Installing deferred Rack::Builder instrumentation
+[2019-04-21 20:29:40 -0400 LAPTOP-7LQO33RH (3666)] INFO : Installing Rack::Builder middleware instrumentation
+[2019-04-21 20:29:40 -0400 LAPTOP-7LQO33RH (3666)] INFO : Finished instrumentation
+[2019-04-21 20:29:57 -0400 LAPTOP-7LQO33RH (3681)] INFO : Starting the New Relic agent version 6.2.0.354 in "development" environment.
+[2019-04-21 20:29:57 -0400 LAPTOP-7LQO33RH (3681)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2019-04-21 20:29:57 -0400 LAPTOP-7LQO33RH (3681)] INFO : Reading configuration from config/newrelic.yml (/mnt/d/workplace/nt-TweetService)
+[2019-04-21 20:29:57 -0400 LAPTOP-7LQO33RH (3681)] INFO : Environment: development
+[2019-04-21 20:29:57 -0400 LAPTOP-7LQO33RH (3681)] INFO : No known dispatcher detected.
+[2019-04-21 20:29:57 -0400 LAPTOP-7LQO33RH (3681)] INFO : Application: My Application (Development)
+[2019-04-21 20:29:57 -0400 LAPTOP-7LQO33RH (3681)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2019-04-21 20:29:57 -0400 LAPTOP-7LQO33RH (3681)] INFO : Installing ActiveRecord 5 instrumentation
+[2019-04-21 20:29:57 -0400 LAPTOP-7LQO33RH (3681)] INFO : Installing Net instrumentation
+[2019-04-21 20:29:57 -0400 LAPTOP-7LQO33RH (3681)] INFO : Installing Sinatra instrumentation
+[2019-04-21 20:29:57 -0400 LAPTOP-7LQO33RH (3681)] INFO : Installing deferred Rack::Builder instrumentation
+[2019-04-21 20:29:57 -0400 LAPTOP-7LQO33RH (3681)] INFO : Installing Rack::Builder middleware instrumentation
+[2019-04-21 20:29:57 -0400 LAPTOP-7LQO33RH (3681)] INFO : Finished instrumentation
+[2019-04-21 20:42:40 -0400 LAPTOP-7LQO33RH (4096)] INFO : Starting the New Relic agent version 6.2.0.354 in "development" environment.
+[2019-04-21 20:42:40 -0400 LAPTOP-7LQO33RH (4096)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2019-04-21 20:42:40 -0400 LAPTOP-7LQO33RH (4096)] INFO : Reading configuration from config/newrelic.yml (/mnt/d/workplace/nt-TweetService)
+[2019-04-21 20:42:40 -0400 LAPTOP-7LQO33RH (4096)] INFO : Environment: development
+[2019-04-21 20:42:40 -0400 LAPTOP-7LQO33RH (4096)] INFO : No known dispatcher detected.
+[2019-04-21 20:42:40 -0400 LAPTOP-7LQO33RH (4096)] INFO : Application: My Application (Development)
+[2019-04-21 20:42:40 -0400 LAPTOP-7LQO33RH (4096)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2019-04-21 20:42:40 -0400 LAPTOP-7LQO33RH (4096)] INFO : Installing ActiveRecord 5 instrumentation
+[2019-04-21 20:42:40 -0400 LAPTOP-7LQO33RH (4096)] INFO : Installing Net instrumentation
+[2019-04-21 20:42:40 -0400 LAPTOP-7LQO33RH (4096)] INFO : Installing Sinatra instrumentation
+[2019-04-21 20:42:40 -0400 LAPTOP-7LQO33RH (4096)] INFO : Installing deferred Rack::Builder instrumentation
+[2019-04-21 20:42:40 -0400 LAPTOP-7LQO33RH (4096)] INFO : Installing Rack::Builder middleware instrumentation
+[2019-04-21 20:42:40 -0400 LAPTOP-7LQO33RH (4096)] INFO : Finished instrumentation
+[2019-04-21 20:42:41 -0400 LAPTOP-7LQO33RH (4096)] INFO : Doing deferred dependency-detection before Rack startup
+[2019-04-21 20:42:41 -0400 LAPTOP-7LQO33RH (4096)] INFO : Installing Bunny instrumentation
+[2019-04-21 20:42:41 -0400 LAPTOP-7LQO33RH (4096)] INFO : Installing Redis Instrumentation
+[2019-04-21 20:42:41 -0400 LAPTOP-7LQO33RH (4096)] INFO : Installing Sidekiq instrumentation
+[2019-04-21 20:44:30 -0400 LAPTOP-7LQO33RH (4222)] INFO : Starting the New Relic agent version 6.2.0.354 in "development" environment.
+[2019-04-21 20:44:30 -0400 LAPTOP-7LQO33RH (4222)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2019-04-21 20:44:30 -0400 LAPTOP-7LQO33RH (4222)] INFO : Reading configuration from config/newrelic.yml (/mnt/d/workplace/nt-TweetService)
+[2019-04-21 20:44:30 -0400 LAPTOP-7LQO33RH (4222)] INFO : Environment: development
+[2019-04-21 20:44:30 -0400 LAPTOP-7LQO33RH (4222)] INFO : No known dispatcher detected.
+[2019-04-21 20:44:30 -0400 LAPTOP-7LQO33RH (4222)] INFO : Application: My Application (Development)
+[2019-04-21 20:44:30 -0400 LAPTOP-7LQO33RH (4222)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2019-04-21 20:44:30 -0400 LAPTOP-7LQO33RH (4222)] INFO : Installing ActiveRecord 5 instrumentation
+[2019-04-21 20:44:30 -0400 LAPTOP-7LQO33RH (4222)] INFO : Installing Net instrumentation
+[2019-04-21 20:44:30 -0400 LAPTOP-7LQO33RH (4222)] INFO : Installing Sinatra instrumentation
+[2019-04-21 20:44:30 -0400 LAPTOP-7LQO33RH (4222)] INFO : Installing deferred Rack::Builder instrumentation
+[2019-04-21 20:44:30 -0400 LAPTOP-7LQO33RH (4222)] INFO : Installing Rack::Builder middleware instrumentation
+[2019-04-21 20:44:30 -0400 LAPTOP-7LQO33RH (4222)] INFO : Finished instrumentation
+[2019-04-21 20:44:31 -0400 LAPTOP-7LQO33RH (4222)] INFO : Doing deferred dependency-detection before Rack startup
+[2019-04-21 20:44:31 -0400 LAPTOP-7LQO33RH (4222)] INFO : Installing Bunny instrumentation
+[2019-04-21 20:44:31 -0400 LAPTOP-7LQO33RH (4222)] INFO : Installing Redis Instrumentation
+[2019-04-21 20:44:31 -0400 LAPTOP-7LQO33RH (4222)] INFO : Installing Sidekiq instrumentation
+[2019-04-21 20:45:54 -0400 LAPTOP-7LQO33RH (4303)] INFO : Starting the New Relic agent version 6.2.0.354 in "development" environment.
+[2019-04-21 20:45:54 -0400 LAPTOP-7LQO33RH (4303)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2019-04-21 20:45:54 -0400 LAPTOP-7LQO33RH (4303)] INFO : Reading configuration from config/newrelic.yml (/mnt/d/workplace/nt-TweetService)
+[2019-04-21 20:45:54 -0400 LAPTOP-7LQO33RH (4303)] INFO : Environment: development
+[2019-04-21 20:45:54 -0400 LAPTOP-7LQO33RH (4303)] INFO : No known dispatcher detected.
+[2019-04-21 20:45:54 -0400 LAPTOP-7LQO33RH (4303)] INFO : Application: My Application (Development)
+[2019-04-21 20:45:54 -0400 LAPTOP-7LQO33RH (4303)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2019-04-21 20:45:54 -0400 LAPTOP-7LQO33RH (4303)] INFO : Installing ActiveRecord 5 instrumentation
+[2019-04-21 20:45:54 -0400 LAPTOP-7LQO33RH (4303)] INFO : Installing Net instrumentation
+[2019-04-21 20:45:54 -0400 LAPTOP-7LQO33RH (4303)] INFO : Installing Sinatra instrumentation
+[2019-04-21 20:45:54 -0400 LAPTOP-7LQO33RH (4303)] INFO : Installing deferred Rack::Builder instrumentation
+[2019-04-21 20:45:54 -0400 LAPTOP-7LQO33RH (4303)] INFO : Installing Rack::Builder middleware instrumentation
+[2019-04-21 20:45:54 -0400 LAPTOP-7LQO33RH (4303)] INFO : Finished instrumentation
+[2019-04-21 20:45:55 -0400 LAPTOP-7LQO33RH (4303)] INFO : Doing deferred dependency-detection before Rack startup
+[2019-04-21 20:45:55 -0400 LAPTOP-7LQO33RH (4303)] INFO : Installing Bunny instrumentation
+[2019-04-21 20:45:55 -0400 LAPTOP-7LQO33RH (4303)] INFO : Installing Redis Instrumentation
+[2019-04-21 20:45:55 -0400 LAPTOP-7LQO33RH (4303)] INFO : Installing Sidekiq instrumentation
+[2019-04-21 20:46:06 -0400 LAPTOP-7LQO33RH (4303)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2019-04-21 20:46:06 -0400 LAPTOP-7LQO33RH (4303)] ERROR : NewRelic::Agent::UnrecoverableServerException: 400: Bad Request
+[2019-04-21 20:46:06 -0400 LAPTOP-7LQO33RH (4303)] INFO : Will re-attempt in 15 seconds
+[2019-04-21 20:46:24 -0400 LAPTOP-7LQO33RH (4303)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2019-04-21 20:46:24 -0400 LAPTOP-7LQO33RH (4303)] ERROR : NewRelic::Agent::UnrecoverableServerException: 400: Bad Request
+[2019-04-21 20:46:24 -0400 LAPTOP-7LQO33RH (4303)] INFO : Will re-attempt in 30 seconds
+[2019-04-21 20:46:41 -0400 LAPTOP-7LQO33RH (4380)] INFO : Starting the New Relic agent version 6.2.0.354 in "development" environment.
+[2019-04-21 20:46:41 -0400 LAPTOP-7LQO33RH (4380)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2019-04-21 20:46:41 -0400 LAPTOP-7LQO33RH (4380)] INFO : Reading configuration from config/newrelic.yml (/mnt/d/workplace/nt-TweetService)
+[2019-04-21 20:46:41 -0400 LAPTOP-7LQO33RH (4380)] INFO : Environment: development
+[2019-04-21 20:46:41 -0400 LAPTOP-7LQO33RH (4380)] INFO : No known dispatcher detected.
+[2019-04-21 20:46:41 -0400 LAPTOP-7LQO33RH (4380)] INFO : Application: My Application (Development)
+[2019-04-21 20:46:41 -0400 LAPTOP-7LQO33RH (4380)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2019-04-21 20:46:41 -0400 LAPTOP-7LQO33RH (4380)] INFO : Installing ActiveRecord 5 instrumentation
+[2019-04-21 20:46:41 -0400 LAPTOP-7LQO33RH (4380)] INFO : Installing Net instrumentation
+[2019-04-21 20:46:41 -0400 LAPTOP-7LQO33RH (4380)] INFO : Installing Sinatra instrumentation
+[2019-04-21 20:46:41 -0400 LAPTOP-7LQO33RH (4380)] INFO : Installing deferred Rack::Builder instrumentation
+[2019-04-21 20:46:41 -0400 LAPTOP-7LQO33RH (4380)] INFO : Installing Rack::Builder middleware instrumentation
+[2019-04-21 20:46:41 -0400 LAPTOP-7LQO33RH (4380)] INFO : Finished instrumentation
+[2019-04-21 20:46:42 -0400 LAPTOP-7LQO33RH (4380)] INFO : Doing deferred dependency-detection before Rack startup
+[2019-04-21 20:46:42 -0400 LAPTOP-7LQO33RH (4380)] INFO : Installing Bunny instrumentation
+[2019-04-21 20:46:42 -0400 LAPTOP-7LQO33RH (4380)] INFO : Installing Redis Instrumentation
+[2019-04-21 20:46:42 -0400 LAPTOP-7LQO33RH (4380)] INFO : Installing Sidekiq instrumentation
+[2019-04-21 20:46:53 -0400 LAPTOP-7LQO33RH (4380)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2019-04-21 20:46:53 -0400 LAPTOP-7LQO33RH (4380)] ERROR : NewRelic::Agent::UnrecoverableServerException: 400: Bad Request
+[2019-04-21 20:46:53 -0400 LAPTOP-7LQO33RH (4380)] INFO : Will re-attempt in 15 seconds
+[2019-04-21 20:47:10 -0400 LAPTOP-7LQO33RH (4380)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2019-04-21 20:47:10 -0400 LAPTOP-7LQO33RH (4380)] ERROR : NewRelic::Agent::UnrecoverableServerException: 400: Bad Request
+[2019-04-21 20:47:10 -0400 LAPTOP-7LQO33RH (4380)] INFO : Will re-attempt in 30 seconds
+[2019-04-21 20:47:42 -0400 LAPTOP-7LQO33RH (4380)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2019-04-21 20:47:42 -0400 LAPTOP-7LQO33RH (4380)] ERROR : NewRelic::Agent::UnrecoverableServerException: 400: Bad Request
+[2019-04-21 20:47:42 -0400 LAPTOP-7LQO33RH (4380)] INFO : Will re-attempt in 60 seconds
+[2019-04-21 20:48:44 -0400 LAPTOP-7LQO33RH (4380)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2019-04-21 20:48:44 -0400 LAPTOP-7LQO33RH (4380)] ERROR : NewRelic::Agent::UnrecoverableServerException: 400: Bad Request
+[2019-04-21 20:48:44 -0400 LAPTOP-7LQO33RH (4380)] INFO : Will re-attempt in 120 seconds
+[2019-04-21 20:49:42 -0400 LAPTOP-7LQO33RH (4476)] INFO : Starting the New Relic agent version 6.2.0.354 in "development" environment.
+[2019-04-21 20:49:42 -0400 LAPTOP-7LQO33RH (4476)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2019-04-21 20:49:42 -0400 LAPTOP-7LQO33RH (4476)] INFO : Reading configuration from config/newrelic.yml (/mnt/d/workplace/nt-TweetService)
+[2019-04-21 20:49:42 -0400 LAPTOP-7LQO33RH (4476)] INFO : Environment: development
+[2019-04-21 20:49:42 -0400 LAPTOP-7LQO33RH (4476)] INFO : No known dispatcher detected.
+[2019-04-21 20:49:42 -0400 LAPTOP-7LQO33RH (4476)] INFO : Application: My Application (Development)
+[2019-04-21 20:49:42 -0400 LAPTOP-7LQO33RH (4476)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2019-04-21 20:49:43 -0400 LAPTOP-7LQO33RH (4476)] INFO : Installing ActiveRecord 5 instrumentation
+[2019-04-21 20:49:43 -0400 LAPTOP-7LQO33RH (4476)] INFO : Installing Net instrumentation
+[2019-04-21 20:49:43 -0400 LAPTOP-7LQO33RH (4476)] INFO : Installing Sinatra instrumentation
+[2019-04-21 20:49:43 -0400 LAPTOP-7LQO33RH (4476)] INFO : Installing deferred Rack::Builder instrumentation
+[2019-04-21 20:49:43 -0400 LAPTOP-7LQO33RH (4476)] INFO : Installing Rack::Builder middleware instrumentation
+[2019-04-21 20:49:43 -0400 LAPTOP-7LQO33RH (4476)] INFO : Finished instrumentation
+[2019-04-21 20:49:43 -0400 LAPTOP-7LQO33RH (4476)] INFO : Doing deferred dependency-detection before Rack startup
+[2019-04-21 20:49:43 -0400 LAPTOP-7LQO33RH (4476)] INFO : Installing Bunny instrumentation
+[2019-04-21 20:49:43 -0400 LAPTOP-7LQO33RH (4476)] INFO : Installing Redis Instrumentation
+[2019-04-21 20:49:43 -0400 LAPTOP-7LQO33RH (4476)] INFO : Installing Sidekiq instrumentation
+[2019-04-21 20:49:51 -0400 LAPTOP-7LQO33RH (4476)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2019-04-21 20:49:51 -0400 LAPTOP-7LQO33RH (4476)] ERROR : NewRelic::Agent::UnrecoverableServerException: 400: Bad Request
+[2019-04-21 20:49:51 -0400 LAPTOP-7LQO33RH (4476)] INFO : Will re-attempt in 15 seconds
+[2019-04-21 20:50:00 -0400 LAPTOP-7LQO33RH (4533)] INFO : Starting the New Relic agent version 6.2.0.354 in "development" environment.
+[2019-04-21 20:50:00 -0400 LAPTOP-7LQO33RH (4533)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2019-04-21 20:50:00 -0400 LAPTOP-7LQO33RH (4533)] INFO : Reading configuration from config/newrelic.yml (/mnt/d/workplace/nt-TweetService)
+[2019-04-21 20:50:00 -0400 LAPTOP-7LQO33RH (4533)] INFO : Environment: development
+[2019-04-21 20:50:00 -0400 LAPTOP-7LQO33RH (4533)] INFO : No known dispatcher detected.
+[2019-04-21 20:50:00 -0400 LAPTOP-7LQO33RH (4533)] INFO : Application: My Application (Development)
+[2019-04-21 20:50:00 -0400 LAPTOP-7LQO33RH (4533)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2019-04-21 20:50:00 -0400 LAPTOP-7LQO33RH (4533)] INFO : Installing ActiveRecord 5 instrumentation
+[2019-04-21 20:50:00 -0400 LAPTOP-7LQO33RH (4533)] INFO : Installing Net instrumentation
+[2019-04-21 20:50:00 -0400 LAPTOP-7LQO33RH (4533)] INFO : Installing Sinatra instrumentation
+[2019-04-21 20:50:00 -0400 LAPTOP-7LQO33RH (4533)] INFO : Installing deferred Rack::Builder instrumentation
+[2019-04-21 20:50:00 -0400 LAPTOP-7LQO33RH (4533)] INFO : Installing Rack::Builder middleware instrumentation
+[2019-04-21 20:50:00 -0400 LAPTOP-7LQO33RH (4533)] INFO : Finished instrumentation
+[2019-04-21 20:50:01 -0400 LAPTOP-7LQO33RH (4533)] INFO : Doing deferred dependency-detection before Rack startup
+[2019-04-21 20:50:01 -0400 LAPTOP-7LQO33RH (4533)] INFO : Installing Bunny instrumentation
+[2019-04-21 20:50:01 -0400 LAPTOP-7LQO33RH (4533)] INFO : Installing Redis Instrumentation
+[2019-04-21 20:50:01 -0400 LAPTOP-7LQO33RH (4533)] INFO : Installing Sidekiq instrumentation
+[2019-04-21 20:50:08 -0400 LAPTOP-7LQO33RH (4533)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2019-04-21 20:50:08 -0400 LAPTOP-7LQO33RH (4533)] ERROR : NewRelic::Agent::UnrecoverableServerException: 400: Bad Request
+[2019-04-21 20:50:08 -0400 LAPTOP-7LQO33RH (4533)] INFO : Will re-attempt in 15 seconds
+[2019-04-21 20:50:26 -0400 LAPTOP-7LQO33RH (4533)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2019-04-21 20:50:26 -0400 LAPTOP-7LQO33RH (4533)] ERROR : NewRelic::Agent::UnrecoverableServerException: 400: Bad Request
+[2019-04-21 20:50:26 -0400 LAPTOP-7LQO33RH (4533)] INFO : Will re-attempt in 30 seconds
+[2019-04-21 20:50:58 -0400 LAPTOP-7LQO33RH (4618)] INFO : Starting the New Relic agent version 6.2.0.354 in "development" environment.
+[2019-04-21 20:50:58 -0400 LAPTOP-7LQO33RH (4618)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2019-04-21 20:50:58 -0400 LAPTOP-7LQO33RH (4618)] INFO : Reading configuration from config/newrelic.yml (/mnt/d/workplace/nt-TweetService)
+[2019-04-21 20:50:58 -0400 LAPTOP-7LQO33RH (4618)] INFO : Environment: development
+[2019-04-21 20:50:58 -0400 LAPTOP-7LQO33RH (4618)] INFO : No known dispatcher detected.
+[2019-04-21 20:50:58 -0400 LAPTOP-7LQO33RH (4618)] INFO : Application: My Application (Development)
+[2019-04-21 20:50:58 -0400 LAPTOP-7LQO33RH (4618)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2019-04-21 20:50:58 -0400 LAPTOP-7LQO33RH (4618)] INFO : Installing ActiveRecord 5 instrumentation
+[2019-04-21 20:50:58 -0400 LAPTOP-7LQO33RH (4618)] INFO : Installing Net instrumentation
+[2019-04-21 20:50:58 -0400 LAPTOP-7LQO33RH (4618)] INFO : Installing Sinatra instrumentation
+[2019-04-21 20:50:58 -0400 LAPTOP-7LQO33RH (4618)] INFO : Installing deferred Rack::Builder instrumentation
+[2019-04-21 20:50:58 -0400 LAPTOP-7LQO33RH (4618)] INFO : Installing Rack::Builder middleware instrumentation
+[2019-04-21 20:50:58 -0400 LAPTOP-7LQO33RH (4618)] INFO : Finished instrumentation
+[2019-04-21 20:50:59 -0400 LAPTOP-7LQO33RH (4618)] INFO : Doing deferred dependency-detection before Rack startup
+[2019-04-21 20:50:59 -0400 LAPTOP-7LQO33RH (4618)] INFO : Installing Bunny instrumentation
+[2019-04-21 20:50:59 -0400 LAPTOP-7LQO33RH (4618)] INFO : Installing Redis Instrumentation
+[2019-04-21 20:50:59 -0400 LAPTOP-7LQO33RH (4618)] INFO : Installing Sidekiq instrumentation
+[2019-04-21 20:51:07 -0400 LAPTOP-7LQO33RH (4618)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2019-04-21 20:51:07 -0400 LAPTOP-7LQO33RH (4618)] ERROR : NewRelic::Agent::UnrecoverableServerException: 400: Bad Request
+[2019-04-21 20:51:07 -0400 LAPTOP-7LQO33RH (4618)] INFO : Will re-attempt in 15 seconds
+[2019-04-21 20:51:24 -0400 LAPTOP-7LQO33RH (4618)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2019-04-21 20:51:24 -0400 LAPTOP-7LQO33RH (4618)] ERROR : NewRelic::Agent::UnrecoverableServerException: 400: Bad Request
+[2019-04-21 20:51:24 -0400 LAPTOP-7LQO33RH (4618)] INFO : Will re-attempt in 30 seconds
+[2019-04-21 20:51:49 -0400 LAPTOP-7LQO33RH (4719)] INFO : Starting the New Relic agent version 6.2.0.354 in "development" environment.
+[2019-04-21 20:51:49 -0400 LAPTOP-7LQO33RH (4719)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2019-04-21 20:51:49 -0400 LAPTOP-7LQO33RH (4719)] INFO : Reading configuration from config/newrelic.yml (/mnt/d/workplace/nt-TweetService)
+[2019-04-21 20:51:49 -0400 LAPTOP-7LQO33RH (4719)] INFO : Environment: development
+[2019-04-21 20:51:49 -0400 LAPTOP-7LQO33RH (4719)] INFO : No known dispatcher detected.
+[2019-04-21 20:51:49 -0400 LAPTOP-7LQO33RH (4719)] INFO : Application: My Application (Development)
+[2019-04-21 20:51:49 -0400 LAPTOP-7LQO33RH (4719)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2019-04-21 20:51:49 -0400 LAPTOP-7LQO33RH (4719)] INFO : Installing ActiveRecord 5 instrumentation
+[2019-04-21 20:51:49 -0400 LAPTOP-7LQO33RH (4719)] INFO : Installing Net instrumentation
+[2019-04-21 20:51:49 -0400 LAPTOP-7LQO33RH (4719)] INFO : Installing Sinatra instrumentation
+[2019-04-21 20:51:49 -0400 LAPTOP-7LQO33RH (4719)] INFO : Installing deferred Rack::Builder instrumentation
+[2019-04-21 20:51:49 -0400 LAPTOP-7LQO33RH (4719)] INFO : Installing Rack::Builder middleware instrumentation
+[2019-04-21 20:51:49 -0400 LAPTOP-7LQO33RH (4719)] INFO : Finished instrumentation
+[2019-04-21 20:51:50 -0400 LAPTOP-7LQO33RH (4719)] INFO : Doing deferred dependency-detection before Rack startup
+[2019-04-21 20:51:50 -0400 LAPTOP-7LQO33RH (4719)] INFO : Installing Bunny instrumentation
+[2019-04-21 20:51:50 -0400 LAPTOP-7LQO33RH (4719)] INFO : Installing Redis Instrumentation
+[2019-04-21 20:51:50 -0400 LAPTOP-7LQO33RH (4719)] INFO : Installing Sidekiq instrumentation
+[2019-04-21 20:52:26 -0400 LAPTOP-7LQO33RH (4735)] INFO : Starting the New Relic agent version 6.2.0.354 in "development" environment.
+[2019-04-21 20:52:26 -0400 LAPTOP-7LQO33RH (4735)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2019-04-21 20:52:26 -0400 LAPTOP-7LQO33RH (4735)] INFO : Reading configuration from config/newrelic.yml (/mnt/d/workplace/nt-TweetService)
+[2019-04-21 20:52:26 -0400 LAPTOP-7LQO33RH (4735)] INFO : Environment: development
+[2019-04-21 20:52:26 -0400 LAPTOP-7LQO33RH (4735)] INFO : No known dispatcher detected.
+[2019-04-21 20:52:26 -0400 LAPTOP-7LQO33RH (4735)] INFO : Application: My Application (Development)
+[2019-04-21 20:52:26 -0400 LAPTOP-7LQO33RH (4735)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2019-04-21 20:52:26 -0400 LAPTOP-7LQO33RH (4735)] INFO : Installing ActiveRecord 5 instrumentation
+[2019-04-21 20:52:26 -0400 LAPTOP-7LQO33RH (4735)] INFO : Installing Net instrumentation
+[2019-04-21 20:52:26 -0400 LAPTOP-7LQO33RH (4735)] INFO : Installing Sinatra instrumentation
+[2019-04-21 20:52:26 -0400 LAPTOP-7LQO33RH (4735)] INFO : Installing deferred Rack::Builder instrumentation
+[2019-04-21 20:52:26 -0400 LAPTOP-7LQO33RH (4735)] INFO : Installing Rack::Builder middleware instrumentation
+[2019-04-21 20:52:26 -0400 LAPTOP-7LQO33RH (4735)] INFO : Finished instrumentation
+[2019-04-21 20:52:27 -0400 LAPTOP-7LQO33RH (4735)] INFO : Doing deferred dependency-detection before Rack startup
+[2019-04-21 20:52:27 -0400 LAPTOP-7LQO33RH (4735)] INFO : Installing Bunny instrumentation
+[2019-04-21 20:52:27 -0400 LAPTOP-7LQO33RH (4735)] INFO : Installing Redis Instrumentation
+[2019-04-21 20:52:27 -0400 LAPTOP-7LQO33RH (4735)] INFO : Installing Sidekiq instrumentation
+[2019-04-21 20:52:34 -0400 LAPTOP-7LQO33RH (4735)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2019-04-21 20:52:34 -0400 LAPTOP-7LQO33RH (4735)] ERROR : NewRelic::Agent::UnrecoverableServerException: 400: Bad Request
+[2019-04-21 20:52:34 -0400 LAPTOP-7LQO33RH (4735)] INFO : Will re-attempt in 15 seconds
+[2019-04-21 20:52:51 -0400 LAPTOP-7LQO33RH (4735)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2019-04-21 20:52:51 -0400 LAPTOP-7LQO33RH (4735)] ERROR : NewRelic::Agent::UnrecoverableServerException: 400: Bad Request
+[2019-04-21 20:52:51 -0400 LAPTOP-7LQO33RH (4735)] INFO : Will re-attempt in 30 seconds
+[2019-04-21 20:53:24 -0400 LAPTOP-7LQO33RH (4735)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2019-04-21 20:53:24 -0400 LAPTOP-7LQO33RH (4735)] ERROR : NewRelic::Agent::UnrecoverableServerException: 400: Bad Request
+[2019-04-21 20:53:24 -0400 LAPTOP-7LQO33RH (4735)] INFO : Will re-attempt in 60 seconds
+[2019-04-21 20:54:26 -0400 LAPTOP-7LQO33RH (4735)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2019-04-21 20:54:26 -0400 LAPTOP-7LQO33RH (4735)] ERROR : NewRelic::Agent::UnrecoverableServerException: 400: Bad Request
+[2019-04-21 20:54:26 -0400 LAPTOP-7LQO33RH (4735)] INFO : Will re-attempt in 120 seconds
+[2019-04-21 20:56:28 -0400 LAPTOP-7LQO33RH (4735)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2019-04-21 20:56:28 -0400 LAPTOP-7LQO33RH (4735)] ERROR : NewRelic::Agent::UnrecoverableServerException: 400: Bad Request
+[2019-04-21 20:56:28 -0400 LAPTOP-7LQO33RH (4735)] INFO : Will re-attempt in 300 seconds
+[2019-04-21 20:58:24 -0400 LAPTOP-7LQO33RH (4877)] INFO : Starting the New Relic agent version 6.2.0.354 in "development" environment.
+[2019-04-21 20:58:24 -0400 LAPTOP-7LQO33RH (4877)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2019-04-21 20:58:24 -0400 LAPTOP-7LQO33RH (4877)] INFO : Reading configuration from config/newrelic.yml (/mnt/d/workplace/nt-TweetService)
+[2019-04-21 20:58:24 -0400 LAPTOP-7LQO33RH (4877)] INFO : Environment: development
+[2019-04-21 20:58:24 -0400 LAPTOP-7LQO33RH (4877)] INFO : No known dispatcher detected.
+[2019-04-21 20:58:24 -0400 LAPTOP-7LQO33RH (4877)] INFO : Application: My Application (Development)
+[2019-04-21 20:58:24 -0400 LAPTOP-7LQO33RH (4877)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2019-04-21 20:58:24 -0400 LAPTOP-7LQO33RH (4877)] INFO : Installing ActiveRecord 5 instrumentation
+[2019-04-21 20:58:24 -0400 LAPTOP-7LQO33RH (4877)] INFO : Installing Net instrumentation
+[2019-04-21 20:58:24 -0400 LAPTOP-7LQO33RH (4877)] INFO : Installing Sinatra instrumentation
+[2019-04-21 20:58:24 -0400 LAPTOP-7LQO33RH (4877)] INFO : Installing deferred Rack::Builder instrumentation
+[2019-04-21 20:58:24 -0400 LAPTOP-7LQO33RH (4877)] INFO : Installing Rack::Builder middleware instrumentation
+[2019-04-21 20:58:24 -0400 LAPTOP-7LQO33RH (4877)] INFO : Finished instrumentation
+[2019-04-21 20:58:25 -0400 LAPTOP-7LQO33RH (4877)] INFO : Doing deferred dependency-detection before Rack startup
+[2019-04-21 20:58:25 -0400 LAPTOP-7LQO33RH (4877)] INFO : Installing Bunny instrumentation
+[2019-04-21 20:58:25 -0400 LAPTOP-7LQO33RH (4877)] INFO : Installing Redis Instrumentation
+[2019-04-21 20:58:25 -0400 LAPTOP-7LQO33RH (4877)] INFO : Installing Sidekiq instrumentation
+[2019-04-21 20:58:53 -0400 LAPTOP-7LQO33RH (4877)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2019-04-21 20:58:53 -0400 LAPTOP-7LQO33RH (4877)] ERROR : NewRelic::Agent::UnrecoverableServerException: 400: Bad Request
+[2019-04-21 20:58:53 -0400 LAPTOP-7LQO33RH (4877)] INFO : Will re-attempt in 15 seconds
+[2019-04-21 20:59:10 -0400 LAPTOP-7LQO33RH (4877)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2019-04-21 20:59:10 -0400 LAPTOP-7LQO33RH (4877)] ERROR : NewRelic::Agent::UnrecoverableServerException: 400: Bad Request
+[2019-04-21 20:59:10 -0400 LAPTOP-7LQO33RH (4877)] INFO : Will re-attempt in 30 seconds
+[2019-04-21 20:59:45 -0400 LAPTOP-7LQO33RH (4944)] INFO : Starting the New Relic agent version 6.2.0.354 in "development" environment.
+[2019-04-21 20:59:45 -0400 LAPTOP-7LQO33RH (4944)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2019-04-21 20:59:45 -0400 LAPTOP-7LQO33RH (4944)] INFO : Reading configuration from config/newrelic.yml (/mnt/d/workplace/nt-TweetService)
+[2019-04-21 20:59:45 -0400 LAPTOP-7LQO33RH (4944)] INFO : Environment: development
+[2019-04-21 20:59:45 -0400 LAPTOP-7LQO33RH (4944)] INFO : No known dispatcher detected.
+[2019-04-21 20:59:45 -0400 LAPTOP-7LQO33RH (4944)] INFO : Application: My Application (Development)
+[2019-04-21 20:59:45 -0400 LAPTOP-7LQO33RH (4944)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2019-04-21 20:59:45 -0400 LAPTOP-7LQO33RH (4944)] INFO : Installing ActiveRecord 5 instrumentation
+[2019-04-21 20:59:45 -0400 LAPTOP-7LQO33RH (4944)] INFO : Installing Net instrumentation
+[2019-04-21 20:59:45 -0400 LAPTOP-7LQO33RH (4944)] INFO : Installing Sinatra instrumentation
+[2019-04-21 20:59:45 -0400 LAPTOP-7LQO33RH (4944)] INFO : Installing deferred Rack::Builder instrumentation
+[2019-04-21 20:59:45 -0400 LAPTOP-7LQO33RH (4944)] INFO : Installing Rack::Builder middleware instrumentation
+[2019-04-21 20:59:45 -0400 LAPTOP-7LQO33RH (4944)] INFO : Finished instrumentation
+[2019-04-21 20:59:46 -0400 LAPTOP-7LQO33RH (4944)] INFO : Doing deferred dependency-detection before Rack startup
+[2019-04-21 20:59:46 -0400 LAPTOP-7LQO33RH (4944)] INFO : Installing Bunny instrumentation
+[2019-04-21 20:59:46 -0400 LAPTOP-7LQO33RH (4944)] INFO : Installing Redis Instrumentation
+[2019-04-21 20:59:46 -0400 LAPTOP-7LQO33RH (4944)] INFO : Installing Sidekiq instrumentation
+[2019-04-21 20:59:53 -0400 LAPTOP-7LQO33RH (4944)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2019-04-21 20:59:53 -0400 LAPTOP-7LQO33RH (4944)] ERROR : NewRelic::Agent::UnrecoverableServerException: 400: Bad Request
+[2019-04-21 20:59:53 -0400 LAPTOP-7LQO33RH (4944)] INFO : Will re-attempt in 15 seconds
+[2019-04-21 21:00:10 -0400 LAPTOP-7LQO33RH (4944)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2019-04-21 21:00:10 -0400 LAPTOP-7LQO33RH (4944)] ERROR : NewRelic::Agent::UnrecoverableServerException: 400: Bad Request
+[2019-04-21 21:00:10 -0400 LAPTOP-7LQO33RH (4944)] INFO : Will re-attempt in 30 seconds
+[2019-04-21 21:00:42 -0400 LAPTOP-7LQO33RH (4944)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2019-04-21 21:00:42 -0400 LAPTOP-7LQO33RH (4944)] ERROR : NewRelic::Agent::UnrecoverableServerException: 400: Bad Request
+[2019-04-21 21:00:42 -0400 LAPTOP-7LQO33RH (4944)] INFO : Will re-attempt in 60 seconds
