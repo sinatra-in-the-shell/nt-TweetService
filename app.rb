@@ -49,9 +49,9 @@ Dir["./apis/*.rb"].each {|file| require file }
 #   #TODO authenticate the caller
 # end
 
-# begin
-#   tweet_server
-# rescue Interrupt => _
-#   tweet_server.stop
-#   pp "** tweet server interupted **"
-# end
+begin
+  tweet_server
+rescue Interrupt => _
+  tweet_server.stop
+  pp "** tweet server interupted **"
+end
