@@ -1,7 +1,5 @@
-#TODO: 
-#1 add redis for search
-#2 use textacular to enable fuzzy search
-
+#TODO: use textacular to enable full-text search
+#USeful Resource: https://www.postgresql.org/docs/10/textsearch-indexes.html
 get '/api/search/tags' do
   @keyword = params['keyword'] + '_tags'
   @max_results = params['maxresults'].to_i
