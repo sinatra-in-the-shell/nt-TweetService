@@ -1,53 +1,31 @@
-# get '/api/search/tags' do
-#   keyword = params['keyword']
-#   skip = params['skip']
-#   max_results = params['maxresults']
-#   from_date = params['fromDate']
-#   to_date = params['toDate']
-#   @tags = Hashtag.with_keyword(keyword)
-#              .after_date(from_date)
-#              .before_date(to_date)
-#              .with_skip(skip)
-#              .with_max(max_results)
-#   if @tags
-#     json_response 200, @tags.to_a
-#   else
-#     json_response 404, @tags.error.full_messages
-#   end
-# end
+#TODO: use textacular to enable full-text search
+#USeful Resource: https://www.postgresql.org/docs/10/textsearch-indexes.html
+get '/api/search/tags' do
+  @keyword = params['keyword'] + '_tags'
+  @max_results = params['maxresults'].to_i
+  if $search_redis.cached?(@keyword)
+    get_tag_from_redis(@keyword, @max_results)
+  else
+    search_tag_from_database(params)
+  end
+end
 
-# get '/api/search/tweets' do
-#   keyword = params['keyword']
-#   skip = params['skip']
-#   max_results = params['maxresults']
-#   from_date = params['fromDate']
-#   to_date = params['toDate']
-#   @tweets = Tweet.with_keyword(keyword)
-#                  .after_date(from_date)
-#                  .before_date(to_date)
-#                  .with_skip(skip)
-#                  .with_max(max_results)
-#   if @tweets
-#     json_response 200, @tweets.as_json(include:
-#       {
-#         user: { only: [:username, :display_name] }
-#       }
-#     )
-#   else
-#     json_response 404, @tweets.error.full_messages
-#   end
-# end
+get '/api/search/tweets' do
+  @keyword = params['keyword'] + '_tweets'
+  @max_results = params['maxresults'].to_i
+  if $search_redis.cached?(@keyword)
+    get_tweet_from_redis(@keyword, @max_results)
+  else
+    search_tweet_from_database(params)
+  end
+end
 
-# get '/api/search/users' do
-#   keyword = params['keyword']
-#   skip = params['skip']
-#   max_results = params['maxresults']
-#   @users = User.with_keyword(keyword)
-#                .with_skip(skip)
-#                .with_max(max_results)
-#   if @users
-#     json_response 200, @users.to_a
-#   else
-#     json_response 404, @users.error.full_messages
-#   end
-# end
+get '/api/search/users' do
+  @keyword = params['keyword'] + '_users'
+  @max_results = params['maxresults'].to_i
+  if $search_redis.cached?(@keyword)
+    get_user_from_redis(@keyword, @max_results)
+  else
+    search_user_from_database(params)
+  end
+end
