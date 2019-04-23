@@ -1,5 +1,6 @@
 class Tweet < ActiveRecord::Base
   belongs_to :user
+  belongs_to :retweet_from, class_name: 'Tweet', foreign_key: 'retweet_from_id'
 
   has_many :retweets, class_name: 'Tweet', foreign_key: 'retweet_from_id'
   has_many :comments, class_name: 'Tweet', foreign_key: 'comment_to_id'
@@ -39,6 +40,14 @@ class Tweet < ActiveRecord::Base
   validates :user_id, presence: true
   validates :text, presence: true
   validates :tweet_type, presence: true
+
+  def like_num
+    self.likes.count
+  end
+
+  def retweet_num
+    self.retweets.count
+  end
 
   def self.searchable_columns
     [:text]
