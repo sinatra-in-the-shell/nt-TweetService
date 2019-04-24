@@ -2,32 +2,76 @@ class TweetHelper
 
   def initialize
   end
-  
+
   def process req
-    pp '** INSIDE TWEET HELPER ** :'
-    pp req
     case req['method']
     when 'new_tweet'
-      new_tweet req
+      new_tweet req['args']
     when 'timeline'
-      get_timeline req, false
+      get_timeline req['args']
     when 'seed_tweet'
-      seed_tweet req
+      seed_tweet req['args']
     else
-      json_response 404
+      'Unknown method'
     end
   end
 
-  def new_tweet req, cached=true
-    pp '** INSIDE NEW TWEET ** '
-    params = req
-    pp params
-    params.delete 'method'
-    @tweet = Tweet.new params
-    if @tweet.save
-      @tweet.to_json
-    else 
-      @tweet.errors.full_messages
+  private
+
+    def new_tweet args
+      @tweet = Tweet.new args
+      if @tweet.save
+        @tweet.to_json
+      else
+        @tweet.errors.full_messages
+      end
     end
-  end
+
+    def get_timeline args
+      user_id = args['user_id'].to_i
+      limit = args['limit'].to_i || 50
+
+      if $timeline_redis.cached?(user_id)
+        begin
+          @timeline = $timeline_redis.get_json_list(user.id, 0, -1)
+          @timeline.to_json
+        rescue StandardError => e
+          e.message
+        end
+      else
+        @timeline = Tweet.where(user_id: user.followings.map{|u| u.id})
+                         .order(created_at: :desc)
+                         .includes(:retweet_from, :likes, :retweets)
+                         .limit(limit)
+                         .as_json(
+                           include: :retweet_from,
+                           methods: [:like_num, :retweet_num]
+                         )
+        # change from SQL to get_timeline methods in timeline_helper.rb
+        # has been prepared for separating services
+        # @timeline = get_timeline(user.id, limit)
+        if args['uncached']
+          @timeline
+        else
+          $timeline_redis.push_results(user_id, @timeline)
+          @timeline.to_json
+        end
+      end
+    end
+
+    def seed_tweet
+      load_seed_tweets(args['count'].to_i, args['filename'])
+    end
+
+    def get_user_tweets args
+      @tweets = Tweet.where(user_id: args['user_id'].to_i)
+                     .order(created_at: :desc)
+                     .includes(:retweet_from, :likes, :retweets)
+                     .limit(limit)
+                     .as_json(
+                       include: :retweet_from,
+                       methods: [:like_num, :retweet_num]
+                     )
+      @tweets.to_json
+    end
 end
