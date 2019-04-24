@@ -33,17 +33,11 @@ helpers do
 end
 
 # init redis client, maybe put into another file for cleaness
-# $followers_redis = RedisClient.new(ENV['FOLLOWERS_REDIS'])
-# $leaders_redis = RedisClient.new(ENV['LEADERS_REDIS'])
-# $timeline_redis = RedisClient.new(ENV['TIMELINE_REDIS'])
+$timeline_redis = RedisClient.new(ENV['TIMELINE_REDIS'])
 $search_redis = RedisClient.new(ENV['SEARCH_REDIS_URL'])
-# $followers_redis.clear
-# $leaders_redis.clear
-# $timeline_redis.clear
-$search_redis.clear
 
-# Apis
-Dir["./apis/*.rb"].each {|file| require file }
+$timeline_redis.clear
+$search_redis.clear
 
 # before do
 #   #TODO authenticate the caller
@@ -51,7 +45,9 @@ Dir["./apis/*.rb"].each {|file| require file }
 
 begin
   tweet_server
+  follow_client
 rescue Interrupt => _
   tweet_server.stop
-  pp "** tweet server interupted **"
+  follow_client.stop
+  pp "** rabbit interupted **"
 end

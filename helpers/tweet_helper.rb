@@ -7,10 +7,14 @@ class TweetHelper
     case req['method']
     when 'new_tweet'
       new_tweet req['args']
-    when 'timeline'
+    when 'get_timeline'
       get_timeline req['args']
     when 'seed_tweet'
       seed_tweet req['args']
+    when 'get_user_tweets'
+      get_user_tweets req['args']
+    when 'search_tweets'
+      search_tweets req['args']
     else
       'Unknown method'
     end
@@ -29,17 +33,24 @@ class TweetHelper
 
     def get_timeline args
       user_id = args['user_id'].to_i
-      limit = args['limit'].to_i || 50
+      limit = (args['limit'] || 50).to_i
 
       if $timeline_redis.cached?(user_id)
         begin
-          @timeline = $timeline_redis.get_json_list(user.id, 0, -1)
-          @timeline.to_json
+          @timeline = $timeline_redis.get_json_list(user_id, 0, -1)
         rescue StandardError => e
           e.message
         end
       else
-        @timeline = Tweet.where(user_id: user.followings.map{|u| u.id})
+        followings = follow_client.call(
+          {
+            method: 'followings',
+            args: {
+              id: user_id
+            }
+          }
+        )
+        @timeline = Tweet.where(user_id: followings.map{|u| u['id']})
                          .order(created_at: :desc)
                          .includes(:retweet_from, :likes, :retweets)
                          .limit(limit)
@@ -50,13 +61,9 @@ class TweetHelper
         # change from SQL to get_timeline methods in timeline_helper.rb
         # has been prepared for separating services
         # @timeline = get_timeline(user.id, limit)
-        if args['uncached']
-          @timeline
-        else
-          $timeline_redis.push_results(user_id, @timeline)
-          @timeline.to_json
-        end
+        $timeline_redis.push_results(user_id, @timeline)
       end
+      @timeline.to_json
     end
 
     def seed_tweet
@@ -68,6 +75,24 @@ class TweetHelper
                      .order(created_at: :desc)
                      .includes(:retweet_from, :likes, :retweets)
                      .limit(limit)
+                     .as_json(
+                       include: :retweet_from,
+                       methods: [:like_num, :retweet_num]
+                     )
+      @tweets.to_json
+    end
+
+    def search_tweets args
+      keyword = args['keyword']
+      skip = args['skip']
+      max_results = args['maxresults'] || 50
+      from_date = args['fromDate']
+      to_date = args['toDate']
+      @tweets = Tweet.with_keyword(keyword)
+                     .after_date(from_date)
+                     .before_date(to_date)
+                     .with_skip(skip)
+                     .with_max(max_results)
                      .as_json(
                        include: :retweet_from,
                        methods: [:like_num, :retweet_num]

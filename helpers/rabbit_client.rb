@@ -33,7 +33,7 @@ class RabbitClient
       break if timeout <= 0
     end
 
-    calls.delete call_id
+    JSON.parse calls.delete(call_id)
   end
 
   def stop
