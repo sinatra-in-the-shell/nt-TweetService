@@ -336,3 +336,33 @@
 [2019-04-21 21:08:49 -0400 LAPTOP-7LQO33RH (4944)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
 [2019-04-21 21:08:49 -0400 LAPTOP-7LQO33RH (4944)] ERROR : NewRelic::Agent::UnrecoverableServerException: 400: Bad Request
 [2019-04-21 21:08:49 -0400 LAPTOP-7LQO33RH (4944)] INFO : Will re-attempt in 300 seconds
+[2019-04-23 19:25:09 -0700 mikiya214u (4767)] INFO : Starting the New Relic agent version 6.2.0.354 in "development" environment.
+[2019-04-23 19:25:09 -0700 mikiya214u (4767)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2019-04-23 19:25:09 -0700 mikiya214u (4767)] INFO : Reading configuration from config/newrelic.yml (/home/kfc/Documents/105b/nt-TweetService)
+[2019-04-23 19:25:09 -0700 mikiya214u (4767)] INFO : Environment: development
+[2019-04-23 19:25:09 -0700 mikiya214u (4767)] INFO : No known dispatcher detected.
+[2019-04-23 19:25:09 -0700 mikiya214u (4767)] INFO : Application: My Application (Development)
+[2019-04-23 19:25:09 -0700 mikiya214u (4767)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2019-04-23 19:25:10 -0700 mikiya214u (4767)] INFO : Installing Net instrumentation
+[2019-04-23 19:25:10 -0700 mikiya214u (4767)] INFO : Installing ActiveRecord 5 instrumentation
+[2019-04-23 19:25:10 -0700 mikiya214u (4767)] INFO : Installing deferred Rack::Builder instrumentation
+[2019-04-23 19:25:10 -0700 mikiya214u (4767)] INFO : Installing Rack::Builder middleware instrumentation
+[2019-04-23 19:25:10 -0700 mikiya214u (4767)] INFO : Installing Sinatra instrumentation
+[2019-04-23 19:25:10 -0700 mikiya214u (4767)] INFO : Finished instrumentation
+[2019-04-23 19:25:11 -0700 mikiya214u (4767)] INFO : Doing deferred dependency-detection before Rack startup
+[2019-04-23 19:25:11 -0700 mikiya214u (4767)] INFO : Installing Sidekiq instrumentation
+[2019-04-23 19:25:11 -0700 mikiya214u (4767)] INFO : Installing Bunny instrumentation
+[2019-04-23 19:25:11 -0700 mikiya214u (4767)] INFO : Installing Redis Instrumentation
+[2019-04-23 19:43:24 -0700 mikiya214u (5537)] INFO : Starting the New Relic agent version 6.2.0.354 in "development" environment.
+[2019-04-23 19:43:24 -0700 mikiya214u (5537)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2019-04-23 19:43:24 -0700 mikiya214u (5537)] INFO : Reading configuration from config/newrelic.yml (/home/kfc/Documents/105b/nt-TweetService)
+[2019-04-23 19:43:24 -0700 mikiya214u (5537)] INFO : Environment: development
+[2019-04-23 19:43:24 -0700 mikiya214u (5537)] INFO : No known dispatcher detected.
+[2019-04-23 19:43:24 -0700 mikiya214u (5537)] INFO : Application: My Application (Development)
+[2019-04-23 19:43:24 -0700 mikiya214u (5537)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2019-04-23 19:43:24 -0700 mikiya214u (5537)] INFO : Installing Net instrumentation
+[2019-04-23 19:43:24 -0700 mikiya214u (5537)] INFO : Installing ActiveRecord 5 instrumentation
+[2019-04-23 19:43:24 -0700 mikiya214u (5537)] INFO : Installing deferred Rack::Builder instrumentation
+[2019-04-23 19:43:24 -0700 mikiya214u (5537)] INFO : Installing Rack::Builder middleware instrumentation
+[2019-04-23 19:43:24 -0700 mikiya214u (5537)] INFO : Installing Sinatra instrumentation
+[2019-04-23 19:43:24 -0700 mikiya214u (5537)] INFO : Finished instrumentation

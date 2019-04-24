@@ -1,9 +1,13 @@
-class RabitClient
+class RabbitClient
   attr_accessor :calls, :connection, :channel, :helper,
                 :server_queue_name, :reply_queue, :exchange
 
   def initialize(rabbit_url, server_queue_name)
-    @connection = Bunny.new(url: rabbit_url)
+    if rabbit_url
+      @connection = Bunny.new rabbit_url
+    else
+      @connection = Bunny.new
+    end
     @connection.start
 
     @channel = connection.create_channel
@@ -47,8 +51,6 @@ class RabitClient
       response_id = properties[:correlation_id]
       calls[response_id] = payload
     end
-
-    
   end
 
   def generate_uuid
