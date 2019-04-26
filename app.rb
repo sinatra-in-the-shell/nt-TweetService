@@ -34,7 +34,7 @@ end
 
 # init redis client, maybe put into another file for cleaness
 $timeline_redis = RedisClient.new(ENV['TIMELINE_REDIS'])
-$search_redis = RedisClient.new(ENV['SEARCH_REDIS_URL'])
+$search_redis = RedisClient.new(ENV['SEARCH_REDIS'])
 
 $timeline_redis.clear
 $search_redis.clear

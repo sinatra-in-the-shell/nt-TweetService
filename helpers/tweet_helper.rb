@@ -25,9 +25,9 @@ class TweetHelper
     def new_tweet args
       @tweet = Tweet.new args
       if @tweet.save
-        @tweet.to_json
+        rabbit_response 200, @tweet
       else
-        @tweet.errors.full_messages
+        rabbit_response 400, nil, @tweet.errors.full_messages
       end
     end
 
@@ -39,17 +39,15 @@ class TweetHelper
         begin
           @timeline = $timeline_redis.get_json_list(user_id, 0, -1)
         rescue StandardError => e
-          e.message
+          return rabbit_response 500, nil, e.message
         end
       else
         followings = follow_client.call(
-          {
-            method: 'followings',
-            args: {
-              id: user_id
-            }
+          method: 'followings',
+          args: {
+            user_id: user_id
           }
-        )
+        )['data']
         @timeline = Tweet.where(user_id: followings.map{|u| u['id']})
                          .order(created_at: :desc)
                          .includes(:retweet_from, :likes, :retweets)
@@ -63,11 +61,20 @@ class TweetHelper
         # @timeline = get_timeline(user.id, limit)
         $timeline_redis.push_results(user_id, @timeline)
       end
-      @timeline.to_json
+      if @timeline
+        rabbit_response 200, @timeline
+      else
+        rabbit_response 404, nil, 'not found'
+      end
     end
 
-    def seed_tweet
-      load_seed_tweets(args['count'].to_i, args['filename'])
+    def seed_tweet args
+      begin
+        load_seed_tweets(args['count'].to_i, args['filename'])
+        rabbit_response 200
+      rescue StandardError => e
+        return rabbit_response 500, nil, e.message
+      end
     end
 
     def get_user_tweets args
@@ -79,7 +86,11 @@ class TweetHelper
                        include: :retweet_from,
                        methods: [:like_num, :retweet_num]
                      )
-      @tweets.to_json
+      if @tweets
+        rabbit_response 200, @tweets
+      else
+        rabbit_response 404, nil, 'not found'
+      end
     end
 
     def search_tweets args
@@ -88,15 +99,27 @@ class TweetHelper
       max_results = args['maxresults'] || 50
       from_date = args['fromDate']
       to_date = args['toDate']
-      @tweets = Tweet.with_keyword(keyword)
-                     .after_date(from_date)
-                     .before_date(to_date)
-                     .with_skip(skip)
-                     .with_max(max_results)
-                     .as_json(
-                       include: :retweet_from,
-                       methods: [:like_num, :retweet_num]
-                     )
-      @tweets.to_json
+      if $search_redis.cached? keyword + '_tweets'
+        @tweets = $search_redis.get_json_list(keyword, 0, max_results - 1)
+      else
+        @tweets = Tweet.with_keyword(keyword)
+                       .after_date(from_date)
+                       .before_date(to_date)
+                       .with_skip(skip)
+                       .with_max(max_results)
+                       .as_json(
+                         include: :retweet_from,
+                         methods: [:like_num, :retweet_num]
+                       )
+        if @tweets
+          $search_redis.push_results(keyword + '_tweets', @tweets)
+          $search_redis.expire(keyword + '_tweets', 20)
+        end
+      end
+      if @tweets
+        rabbit_response 200, @tweets
+      else
+        rabbit_response 404, nil, 'not found'
+      end
     end
 end

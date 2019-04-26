@@ -491,3 +491,35 @@
 [2019-04-24 12:52:43 -0700 mikiya214u (17834)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
 [2019-04-24 12:52:43 -0700 mikiya214u (17834)] ERROR : NewRelic::Agent::UnrecoverableServerException: 400: Bad Request
 [2019-04-24 12:52:43 -0700 mikiya214u (17834)] INFO : Will re-attempt in 300 seconds
+[2019-04-25 20:19:13 -0700 mikiya214u (15754)] INFO : Starting the New Relic agent version 6.2.0.354 in "development" environment.
+[2019-04-25 20:19:13 -0700 mikiya214u (15754)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2019-04-25 20:19:13 -0700 mikiya214u (15754)] INFO : Reading configuration from config/newrelic.yml (/home/kfc/Documents/105b/nt-TweetService)
+[2019-04-25 20:19:13 -0700 mikiya214u (15754)] INFO : Environment: development
+[2019-04-25 20:19:13 -0700 mikiya214u (15754)] INFO : No known dispatcher detected.
+[2019-04-25 20:19:13 -0700 mikiya214u (15754)] INFO : Application: My Application (Development)
+[2019-04-25 20:19:13 -0700 mikiya214u (15754)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2019-04-25 20:19:14 -0700 mikiya214u (15754)] INFO : Installing Net instrumentation
+[2019-04-25 20:19:14 -0700 mikiya214u (15754)] INFO : Installing ActiveRecord 5 instrumentation
+[2019-04-25 20:19:14 -0700 mikiya214u (15754)] INFO : Installing deferred Rack::Builder instrumentation
+[2019-04-25 20:19:14 -0700 mikiya214u (15754)] INFO : Installing Rack::Builder middleware instrumentation
+[2019-04-25 20:19:14 -0700 mikiya214u (15754)] INFO : Installing Sinatra instrumentation
+[2019-04-25 20:19:14 -0700 mikiya214u (15754)] INFO : Finished instrumentation
+[2019-04-25 20:19:17 -0700 mikiya214u (15754)] INFO : Doing deferred dependency-detection before Rack startup
+[2019-04-25 20:19:17 -0700 mikiya214u (15754)] INFO : Installing Sidekiq instrumentation
+[2019-04-25 20:19:17 -0700 mikiya214u (15754)] INFO : Installing Bunny instrumentation
+[2019-04-25 20:19:17 -0700 mikiya214u (15754)] INFO : Installing Redis Instrumentation
+[2019-04-25 20:21:45 -0700 mikiya214u (15754)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2019-04-25 20:21:45 -0700 mikiya214u (15754)] ERROR : NewRelic::Agent::UnrecoverableServerException: 400: Bad Request
+[2019-04-25 20:21:45 -0700 mikiya214u (15754)] INFO : Will re-attempt in 15 seconds
+[2019-04-25 20:22:07 -0700 mikiya214u (15754)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2019-04-25 20:22:07 -0700 mikiya214u (15754)] ERROR : NewRelic::Agent::UnrecoverableServerException: 400: Bad Request
+[2019-04-25 20:22:07 -0700 mikiya214u (15754)] INFO : Will re-attempt in 30 seconds
+[2019-04-25 20:22:41 -0700 mikiya214u (15754)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2019-04-25 20:22:41 -0700 mikiya214u (15754)] ERROR : NewRelic::Agent::UnrecoverableServerException: 400: Bad Request
+[2019-04-25 20:22:41 -0700 mikiya214u (15754)] INFO : Will re-attempt in 60 seconds
+[2019-04-25 20:23:46 -0700 mikiya214u (15754)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2019-04-25 20:23:46 -0700 mikiya214u (15754)] ERROR : NewRelic::Agent::UnrecoverableServerException: 400: Bad Request
+[2019-04-25 20:23:46 -0700 mikiya214u (15754)] INFO : Will re-attempt in 120 seconds
+[2019-04-25 20:25:49 -0700 mikiya214u (15754)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2019-04-25 20:25:49 -0700 mikiya214u (15754)] ERROR : NewRelic::Agent::UnrecoverableServerException: 400: Bad Request
+[2019-04-25 20:25:49 -0700 mikiya214u (15754)] INFO : Will re-attempt in 300 seconds
