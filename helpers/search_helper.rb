@@ -25,15 +25,15 @@ def search_tweet_from_database(params)
   max_results = params['maxresults']
   from_date = params['fromDate']
   to_date = params['toDate']
-  Tweet.with_keyword(keyword)
-                 .after_date(from_date)
-                 .before_date(to_date)
-                 .with_skip(skip)
-                 .with_max(max_results)
-                 .as_json(
-                   include: :retweet_from,
-                   methods: [:like_num, :retweet_num]
-                 )
+  tweets = Tweet.with_keyword(keyword)
+                .after_date(from_date)
+                .before_date(to_date)
+                .with_skip(skip)
+                .with_max(max_results)
+                .as_json(
+                  include: :retweet_from,
+                  methods: [:like_num, :retweet_num]
+                )
   puts "[REDIS MISS] searched tweets by #{keyword}"
   puts "[DATABASE RESULT] got result:"
   pp tweets[0, 5]
