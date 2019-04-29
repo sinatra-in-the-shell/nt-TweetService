@@ -15,6 +15,10 @@ class TweetHelper
       get_user_tweets req['args']
     when 'search_tweets'
       search_tweets req['args']
+    when 'like_tweet'
+      like_tweet req['args']
+    when 'get_comments'
+      get_comments req['args']
     else
       'Unknown method'
     end
@@ -116,6 +120,40 @@ class TweetHelper
           $search_redis.expire(keyword + '_tweets', 20)
         end
       end
+      if @tweets
+        rabbit_response 200, @tweets
+      else
+        rabbit_response 404, nil, 'not found'
+      end
+    end
+
+    def like_tweet args
+      @like = Like.find_by(
+        user_id: args['user_id'],
+        tweet_id: params['tweet_id']
+      )
+      if @like
+        res = @like.destroy
+      else
+        @like = Like.new(
+          user_id: args['user_id'],
+          tweet_id: params['tweet_id']
+        )
+        res = @like.save
+      end
+      if res
+        rabbit_response 200
+      else
+        rabbit_response 404, nil, 'not found'
+      end
+    end
+
+    def get_comments args
+      @tweets = Tweet.where(comment_to_id: args['tweet_id'])
+                     .includes(:likes, :retweets)
+                     .as_json(
+                       methods: [:like_num, :retweet_num]
+                     )
       if @tweets
         rabbit_response 200, @tweets
       else

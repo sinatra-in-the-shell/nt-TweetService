@@ -6,7 +6,7 @@ class RabbitClient
     if rabbit_url
       @connection = Bunny.new rabbit_url
     else
-      @connection = Bunny.new
+      @connection = Bunny.new tls: false
     end
     @connection.start
 
@@ -26,6 +26,7 @@ class RabbitClient
       correlation_id: call_id,
       reply_to: reply_queue.name
     )
+    
     loop do
       sleep 0.01
       timeout -= 0.01
